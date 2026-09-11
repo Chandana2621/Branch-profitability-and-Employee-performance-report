@@ -80,7 +80,7 @@ The final workbook consists of five major reporting components.
 <img width="1600" height="950" alt="Dashboard" src="https://github.com/user-attachments/assets/93a8bd52-a6d8-448c-adfb-a259d1c6dede" />
 
 
-Provides a management-level summary of overall financial performance.
+An interactive dashboard providing a management-level summary of overall financial performance.
 The dashboard acts as the starting point for management review, with detailed reports providing further analysis.
 
 ---
