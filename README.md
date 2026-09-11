@@ -64,17 +64,60 @@ The resulting model feeds the detailed profitability reports and executive dashb
 The final workbook consists of five major reporting components.
 
 ### 1. Executive Dashboard
+
 <img width="1600" height="950" alt="Dashboard" src="https://github.com/user-attachments/assets/93a8bd52-a6d8-448c-adfb-a259d1c6dede" />
-
-
 
 An interactive dashboard providing a management-level summary of overall financial performance.
 
 The dashboard acts as the starting point for management review, with detailed reports providing further analysis.
 
 ---
+### 2. Branch-wise Report
+<img width="1600" height="950" alt="Branch wise p l report" src="https://github.com/user-attachments/assets/2ac68fa5-ae89-49a0-a6ce-d7fa28d6b800" />
 
-### 2. Individual Resource P/L Report
+The Branch-wise Report provides a comparative view of financial performance across branches.
+
+This allows management to compare branch performance and identify branches requiring further investigation.
+
+---
+### 3. Project & Customer-wise Report
+<img width="1600" height="950" alt="Project wise p l report" src="https://github.com/user-attachments/assets/4acbcece-38e8-44d3-8468-4de3787044d4" />
+
+The report highlights both profitable and loss-making projects.
+
+It also contains an **Unbilled Projects** section to identify projects where expenses have been recorded without corresponding income/billing in the analysed data.
+
+These exceptions can then be investigated against project status, contractual billing terms, invoices raised and recoverable expenses.
+One of the useful aspects of the project-wise analysis is that it can help highlight areas that may require further investigation.
+
+Project expenses and income are analysed together at the project level. This makes it easier to notice unusual situations, such as a project showing relatively high expenses with little or no corresponding income in the available data.
+
+These situations do not necessarily indicate billing errors, revenue leakage or any other specific issue. There may be valid operational or contractual reasons for the difference.
+
+However, the report acts as an **analytical indicator**, directing attention towards projects where the financial pattern appears unusual.
+
+For example:
+
+> **High project expenses + low/no recorded income → "This project may need to be checked."**
+
+The identified projects can then be reviewed against project status, billing arrangements, invoices raised, expense nature and other relevant information.
+
+The purpose is to make potential areas of concern easier to notice and reduce the effort required to identify where further analysis may be needed.
+
+---
+### 4. Employee-wise Profitability Report
+<img width="1600" height="953" alt="Employee wise P L report" src="https://github.com/user-attachments/assets/dcec7eec-40aa-4462-91af-0eecdfc65269" />
+
+Engineering resources are a major component of the business model, making employee/resource-level profitability an important analytical area.
+
+The Employee-wise Report provides:
+
+**Income → Expense → Profit → Profit Margin → Allocated Overhead → Operating Profit**
+
+This enables management to identify resources generating healthy margins as well as resources operating at low or negative profitability.
+
+---
+### 5. Individual Resource P/L Report
 <img width="1600" height="950" alt="Individual resourse P L report" src="https://github.com/user-attachments/assets/ec767e5f-503e-43d5-b534-9764a40b8ce8" />
 
 The Individual Resource P/L Report was developed specifically as a **pre-payment profitability check**.
@@ -99,56 +142,6 @@ and:
 
 An overhead rate is allocated by the corporation and applied to calculate the operating profitability of each employee.
 This provides a quick profitability review before payment disbursement.
-
----
-
-### 3. Project & Customer-wise Report
-<img width="1600" height="950" alt="Project wise p l report" src="https://github.com/user-attachments/assets/4acbcece-38e8-44d3-8468-4de3787044d4" />
-
-
-The report highlights both profitable and loss-making projects.
-
-It also contains an **Unbilled Projects** section to identify projects where expenses have been recorded without corresponding income/billing in the analysed data.
-
-These exceptions can then be investigated against project status, contractual billing terms, invoices raised and recoverable expenses.
-One of the useful aspects of the project-wise analysis is that it can help highlight areas that may require further investigation.
-
-Project expenses and income are analysed together at the project level. This makes it easier to notice unusual situations, such as a project showing relatively high expenses with little or no corresponding income in the available data.
-
-These situations do not necessarily indicate billing errors, revenue leakage or any other specific issue. There may be valid operational or contractual reasons for the difference.
-
-However, the report acts as an **analytical indicator**, directing attention towards projects where the financial pattern appears unusual.
-
-For example:
-
-> **High project expenses + low/no recorded income → "This project may need to be checked."**
-
-The identified projects can then be reviewed against project status, billing arrangements, invoices raised, expense nature and other relevant information.
-
-The purpose is to make potential areas of concern easier to notice and reduce the effort required to identify where further analysis may be needed.
-
----
-
-### 4. Employee-wise Profitability Report
-
-<img width="1600" height="953" alt="Employee wise P L report" src="https://github.com/user-attachments/assets/dcec7eec-40aa-4462-91af-0eecdfc65269" />
-
-Engineering resources are a major component of the business model, making employee/resource-level profitability an important analytical area.
-
-The Employee-wise Report provides:
-
-**Income → Expense → Profit → Profit Margin → Allocated Overhead → Operating Profit**
-
-This enables management to identify resources generating healthy margins as well as resources operating at low or negative profitability.
-
----
-
-### 5. Branch-wise Report
-<img width="1600" height="950" alt="Branch wise p l report" src="https://github.com/user-attachments/assets/2ac68fa5-ae89-49a0-a6ce-d7fa28d6b800" />
-
-The Branch-wise Report provides a comparative view of financial performance across branches.
-
-This allows management to compare branch performance and identify branches requiring further investigation.
 
 ---
 ## Tools & Technologies utilised
