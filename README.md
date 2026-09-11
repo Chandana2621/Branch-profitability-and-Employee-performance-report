@@ -1,4 +1,3 @@
-# Branch-profitability-and-Employee-performance-report
 # Branch, Project & Employee Profitability Analysis
 
 An Excel-based financial analysis and reporting system developed to analyse profitability across projects, employees/resources and branches, while supporting management decision-making and pre-payment profitability checks.
@@ -52,23 +51,14 @@ The main objectives of the project were to:
 
 ## Approach
 
+
 The reporting process follows the structure:
 
 **Source Data → Data Consolidation → Classification & Grouping → Profitability Calculations → Reports & Dashboard**
 
-The available Excel datasets were consolidated using **Power Query** and organised into a common underlying dataset.
+The available Excel datasets were consolidated and transformed using **Power Query** to create a structured underlying dataset. **Advanced Excel formulas and Power Pivot** were then used for calculations, data modelling and profitability analysis. The processed data was subsequently used to build interactive reports with filters and selection controls for project, employee and branch-level analysis.
 
-The consolidated data was then analysed across multiple dimensions including:
-
-- Project
-- Customer
-- Employee/Resource
-- Branch
-- Month
-- Income
-- Expense
-
-The resulting calculations were used to generate detailed reports and an executive dashboard.
+The resulting model feeds the detailed profitability reports and executive dashboard, providing a consistent reporting structure across the different levels of analysis.
 
 ---
 
@@ -76,7 +66,7 @@ The resulting calculations were used to generate detailed reports and an executi
 
 The final workbook consists of five major reporting components.
 
-### 1. Executive Dashboard
+### Executive Dashboard
 <img width="1600" height="950" alt="Dashboard" src="https://github.com/user-attachments/assets/93a8bd52-a6d8-448c-adfb-a259d1c6dede" />
 
 
@@ -85,6 +75,33 @@ The dashboard acts as the starting point for management review, with detailed re
 
 ---
 
+### 1. Individual Resource P/L Report
+<img width="1600" height="950" alt="Individual resourse P L report" src="https://github.com/user-attachments/assets/ec767e5f-503e-43d5-b534-9764a40b8ce8" />
+
+The Individual Resource P/L Report was developed specifically as a **pre-payment profitability check**.
+
+When processing payments for multiple employees/resources, reviewing individual profitability through the underlying dataset can require repeated filtering and pivoting.
+
+The report simplifies this process.
+
+The user can:
+
+1. Enter or paste the required Employee IDs.
+2. Select the relevant month.
+3. Obtain the corresponding P&L for the selected employees.
+
+The report calculates:
+
+**Profit = Income − Expense**
+
+and:
+
+**Operating Profit = Profit − Allocated Overhead**
+
+An overhead rate can be specified to calculate the operating profitability of each resource.
+
+This provides a quick profitability review before payment disbursement.
+---
 ### 2. Project & Customer-wise Report
 <img width="1600" height="950" alt="Project wise p l report" src="https://github.com/user-attachments/assets/4acbcece-38e8-44d3-8468-4de3787044d4" />
 
