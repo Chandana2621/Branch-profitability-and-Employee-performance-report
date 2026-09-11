@@ -41,16 +41,14 @@ The main objectives of the project were to:
 - Compare profitability across branches
 - Identify profitable and loss-making projects
 - Identify low-profitability and loss-making resources
-- Track unbilled project expenses
-- Identify potential billing/revenue leakage indicators
+- Highlight projects with unusual income and expense patterns
+- Identify areas that may require further billing or financial investigation
 - Calculate operating profitability after allocated overhead
 - Support pre-payment profitability checks
 - Provide management with a consolidated view of financial performance
 
 ---
-
 ## Approach
-
 
 The reporting process follows the structure:
 
@@ -61,21 +59,22 @@ The available Excel datasets were consolidated and transformed using **Power Que
 The resulting model feeds the detailed profitability reports and executive dashboard, providing a consistent reporting structure across the different levels of analysis.
 
 ---
-
 ## Reporting Structure
 
 The final workbook consists of five major reporting components.
 
-### Executive Dashboard
+### 1. Executive Dashboard
 <img width="1600" height="950" alt="Dashboard" src="https://github.com/user-attachments/assets/93a8bd52-a6d8-448c-adfb-a259d1c6dede" />
 
 
+
 An interactive dashboard providing a management-level summary of overall financial performance.
+
 The dashboard acts as the starting point for management review, with detailed reports providing further analysis.
 
 ---
 
-### 1. Individual Resource P/L Report
+### 2. Individual Resource P/L Report
 <img width="1600" height="950" alt="Individual resourse P L report" src="https://github.com/user-attachments/assets/ec767e5f-503e-43d5-b534-9764a40b8ce8" />
 
 The Individual Resource P/L Report was developed specifically as a **pre-payment profitability check**.
@@ -98,11 +97,12 @@ and:
 
 **Operating Profit = Profit − Allocated Overhead**
 
-An overhead rate can be specified to calculate the operating profitability of each resource.
-
+An overhead rate is allocated by the corporation and applied to calculate the operating profitability of each employee.
 This provides a quick profitability review before payment disbursement.
+
 ---
-### 2. Project & Customer-wise Report
+
+### 3. Project & Customer-wise Report
 <img width="1600" height="950" alt="Project wise p l report" src="https://github.com/user-attachments/assets/4acbcece-38e8-44d3-8468-4de3787044d4" />
 
 
@@ -111,10 +111,26 @@ The report highlights both profitable and loss-making projects.
 It also contains an **Unbilled Projects** section to identify projects where expenses have been recorded without corresponding income/billing in the analysed data.
 
 These exceptions can then be investigated against project status, contractual billing terms, invoices raised and recoverable expenses.
+One of the useful aspects of the project-wise analysis is that it can help highlight areas that may require further investigation.
+
+Project expenses and income are analysed together at the project level. This makes it easier to notice unusual situations, such as a project showing relatively high expenses with little or no corresponding income in the available data.
+
+These situations do not necessarily indicate billing errors, revenue leakage or any other specific issue. There may be valid operational or contractual reasons for the difference.
+
+However, the report acts as an **analytical indicator**, directing attention towards projects where the financial pattern appears unusual.
+
+For example:
+
+> **High project expenses + low/no recorded income → "This project may need to be checked."**
+
+The identified projects can then be reviewed against project status, billing arrangements, invoices raised, expense nature and other relevant information.
+
+The purpose is to make potential areas of concern easier to notice and reduce the effort required to identify where further analysis may be needed.
 
 ---
 
-### 3. Employee-wise Profitability Report
+### 4. Employee-wise Profitability Report
+
 <img width="1600" height="953" alt="Employee wise P L report" src="https://github.com/user-attachments/assets/dcec7eec-40aa-4462-91af-0eecdfc65269" />
 
 Engineering resources are a major component of the business model, making employee/resource-level profitability an important analytical area.
@@ -125,109 +141,37 @@ The Employee-wise Report provides:
 
 This enables management to identify resources generating healthy margins as well as resources operating at low or negative profitability.
 
-
 ---
 
-### 4. Branch-wise Report
+### 5. Branch-wise Report
 <img width="1600" height="950" alt="Branch wise p l report" src="https://github.com/user-attachments/assets/2ac68fa5-ae89-49a0-a6ce-d7fa28d6b800" />
 
 The Branch-wise Report provides a comparative view of financial performance across branches.
+
 This allows management to compare branch performance and identify branches requiring further investigation.
 
 ---
+## Tools & Technologies utilised
 
-### 5. Individual Resource P/L Report
-<img width="1600" height="950" alt="Individual resourse P L report" src="https://github.com/user-attachments/assets/ec767e5f-503e-43d5-b534-9764a40b8ce8" />
-
-The Individual Resource P/L Report was developed specifically as a **pre-payment profitability check**.
-
-When processing payments for multiple employees/resources, reviewing individual profitability through the underlying dataset can require repeated filtering and pivoting.
-
-The report simplifies this process.
-
-The user can:
-
-1. Enter or paste the required Employee IDs.
-2. Select the relevant month.
-3. Obtain the corresponding P&L for the selected employees.
-
-The report calculates:
-
-**Profit = Income − Expense**
-
-and:
-
-**Operating Profit = Profit − Allocated Overhead**
-
-An overhead rate can be specified to calculate the operating profitability of each resource.
-
-This provides a quick profitability review before payment disbursement.
-
+- **Microsoft Excel** – Reporting, calculations and interactive analysis
+- **Power Query** – Data consolidation and transformation
+- **Power Pivot** – Data modelling and analysis
+- **Advanced Excel Formulas** – Calculations, lookups, conditional logic and dynamic reporting
+  
 ---
+## Project Outcome
 
-## Unbilled Expenses & Revenue Leakage
+The final workbook converts multiple Excel-based financial and operational datasets into a structured profitability reporting framework.
 
-One of the key control areas identified during the project was the risk of unbilled or delayed billing.
+The model provides a consistent approach to analysing:
 
-Different projects may have different:
+- Overall financial performance
+- Branch profitability
+- Project and customer profitability
+- Employee/resource profitability
+- Individual resource P&L
+- Unusual income and expense patterns
 
-- Billing cycles
-- Contract durations
-- Reimbursement arrangements
-- Project scopes
-- Invoice requirements
+The project combines **financial reporting, profitability analysis, exception analysis and payment review** into a single Excel-based reporting system.
 
-As a result, project-related expenses may be incurred before the corresponding billing takes place.
-
-This creates a risk that:
-
-- Reimbursable expenses may not be invoiced
-- Recoverable project costs may remain unbilled
-- Billing may be delayed
-- Portions of project revenue may not be captured in the expected period
-
-The report therefore identifies projects where expenses exist without corresponding income in the analysed data.
-
-### Important distinction
-
-An unbilled expense does **not automatically mean revenue leakage**.
-
-The report functions as an **exception/early-warning mechanism**. The identified projects require further investigation against actual invoices, contractual terms, project status and recoverability of the expenses.
-
----
-
-## Monthly Project Analysis
-
-Project profitability is not always meaningful when viewed only as a cumulative figure.
-
-A project may be profitable overall but experience periods of declining or negative profitability.
-
-Monthly analysis can help identify patterns such as:
-
-```text
-Normal Billing + Normal Expenses
-                ↓
-         Stable Profitability
-
-Expenses Increase + Billing Unchanged
-                ↓
-        Margin Deterioration
-
-Expenses Incurred + No Corresponding Billing
-                ↓
-       Potential Billing Exception
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The primary objective was not simply to present financial data, but to make the data easier to analyse and to direct attention towards areas where further investigation or management action may be required.
